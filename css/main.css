@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+}
+
+
+#full-page {
+    min-height: 100%;
+
+    background: #a4d6ed;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+
+
+#header {
+    background: #84cef0;
+    border: 3px solid #72c6ed;
+    border-radius: 0 0 15px 15px;
+
+    margin: 0 4%;
+    text-align: center;
+    line-height: 5vw;
+    font-family: 'Kanit', sans-serif;
+    font-size: 3vw;
+}
+
+#navigation {
+
+    margin: 2vw 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.menu-item {
+    border: 2px black solid;
+    border-radius: 15px;
+    background: #2db0ed;
+    height: min-content;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2vw;
+    width: 100%;
+    margin: 2px;
+}
+
+@media screen and (max-width: 550px) {
+    #navigation {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        border: 2px black solid;
+        border-radius: 15px;
+        background: #2db0ed;
+        height: min-content;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2vw;
+        width: 90%;
+
+    }
+}
+
+#main_content {
+    background: #a4d6ed;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+#footer {
+    background: #84cef0;
+    text-align: center;
+    float: bottom;
+    border: 1px solid black;
+    border-radius: 5px;
+}
